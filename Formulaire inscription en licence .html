@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire </title>
+</head>
+<body>
+    <form align=center method="post" action="validation formulaire.html" border=normal>
+    <h2>Inscription en licence</h2>
+    <fieldset>
+<legend>Informations personnelles</legend> <br>
+<h5 align=right font size=3><font color=red>*</font>Champs obligatoires</h5>  
+    <label for="nom">Votre nom:</label>
+    <input type="text" name="nom" id="nom" placeholder="votre nom ?"><br><br><br>
+    <label for="prenom">Votre prenom:</label>
+    <input type="text" name="prenom" id="prenom" placeholder="votre prenom?"><br><br><br>
+    <label for="d">Votre date de naissance:</label>
+    <input type="date" name="datenaissance" id="d" ><br><br><br>
+    <label for="age">Votre age:</label>
+    <input type="number" name="age" id="age" placeholder="votre age?"/><br><br><br>
+    <label for="adresse">Votre adresse</label>
+    <textarea name="adresse" id="adresse" rows=5 cols=40 placeholder="votre adresse ?" ></textarea><br><br><br>
+    <label for="email">Entrer votre email:</label>
+    <input type="email" name="mail" id="email"><br><br><br>
+    <label for="url">Entrer votre url</label>
+    <input type="url" name="url" id="url"><br><br><br>
+    <label for="mdp">Mot de passe:</label>
+    <font color=red size=3>*</font><input type="password" name="mdp" id="mdp" required><br><br><br>
+    <label for="mdp2">Retaper votre mot de passe:</label>
+    <font color=red size=3>*</font><input type="password" name="mdp2" id="mdp2" required><br><br><br>
+    Quelque chose à ajouter?<input type="text" pattern="[I][N][S][A][T][0-9]{4}">
+</fieldset><br><br><br>
+<fieldset><legend>Gestion des groupes et des options</legend>
+    <label for="grp">Votre groupe</label>
+    <input type="radio" name="grp" name="grp "id="grp"value="Groupe 1" checked >Groupe 1
+    <input type="radio" name="grp" name="grp "id="grp"value="Groupe 2">Groupe 2
+    <input type="radio" name="grp" name="grp "id="grp"value="Groupe 3">Groupe 3<br><br><br>
+    <label for="numero">Numéro de carte étudiant</label>
+    <input type="text" name="carteetud" id="numero" placeholder="numéro de carte d'étudiant?"><br><br><br>
+    <label for="options">Choisissez les options que vous désirez:</label>
+    <select name="select" id="options" >
+        <option  value="J2ee">J2ee</option>
+        <option value="Android">Android</option>
+        <option value="Net">Net</option>
+    </select><br><br><br>
+</fieldset><br><br>
+    <input  type="submit"  value="valider">
+    <input type="reset" value="Réinitialiser">
+
+
+</form>
+</body>
+</html>
